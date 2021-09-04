@@ -316,4 +316,11 @@ footer{
          width: 80%;
          margin-bottom: 40px;
      }
+
+
+     .img-header{
+        width: 30%;
+        box-shadow: 0 0 6px rgba(175, 67, 202, 0.5); 
+        border-radius: 50%;
+    }
 }
