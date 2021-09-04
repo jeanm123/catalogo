@@ -323,4 +323,10 @@ footer{
         box-shadow: 0 0 6px rgba(175, 67, 202, 0.5); 
         border-radius: 50%;
     }
+
+    .buscador{
+        margin-top: 8%;
+        border-radius: 60px;
+    
+    }
 }
