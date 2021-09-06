@@ -3,8 +3,9 @@ function subir_arriba(){
     var boton_arriba= document.documentElement.scrollTop ||
 	document.body.scrollTop;
     if(boton_arriba>0){
-        window.requestAnimationFrame(subir_arriba);
-        window.scrollTo(0,boton_arriba-(boton_arriba/10));
+        // window.requestAnimationFrame(subir_arriba);
+        // window.scrollTo(0,boton_arriba-(boton_arriba/5));
+        window.scrollTo(0,0);
     }
 }
 buttonUp=document.getElementById("boton_arriba");
