@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', Times, serif ;
 }
 :root{
  scroll-behavior: smooth;   
 }
 body{
     font-family: 'Open Sans','san-serif';
+    
 }
 
 .contenedor{
@@ -51,6 +54,7 @@ header{
     left: 10px;
     width: 50px;
     cursor: pointer;
+    
 }
 .menu-carrito{
     position: fixed;
@@ -286,6 +290,106 @@ footer{
     margin-bottom: 60px;
 }
 /* FIN FOOTER */
+
+/* Barra Lateral */
+.menu_side{
+    width: 0px;
+    height: 100%;
+    background-color: #9f8ad0;
+    position: fixed;
+    color: #ffff;
+    font-size: 18px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(175, 67, 202, 0.74); 
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+}
+.name_page{
+    padding: 20px 100px;
+    display: flex;
+    margin-top: 10px;
+}
+.menu_side .btn_cerrar{
+    margin-left: 220px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.menu_side .btn_cerrar i{
+    font-size: 25px;
+}
+.menu_side .btn_cerrar i:hover{
+    cursor: pointer;
+}
+.options_menu{
+    padding: 20px 30px;
+    position: absolute;
+    top: 80px;
+}
+.options_menu a{
+    color: #E7EBDA;
+    cursor: default ;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+
+}
+.options_menu a:hover{
+    color: #ffff ;
+}
+
+.options_menu .option{
+    padding: 20px 0px;
+    /* display: flex;
+    align-items: center; */
+    position: relative;
+}
+.options_menu .option h4{
+    font-weight: 300;
+    cursor: pointer;
+}
+.options_menu a.selected{
+    color: #ffff;
+}
+.options_menu a.selected:before{
+    content: '';
+    width: 3px;
+    height: 80%;
+    background: #ffff;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+/* Fin Barra lateral */
+/* javascript barra lateral */
+.side_move{
+    width: 250px;
+    transition: color 300ms ;
+}
+/* FIn barra lateral javascript */
+/* BOTON ARRIBA  */
+.boton_arriba{
+    width: 60px;
+    height: 60px;
+    background: #764ba2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 60px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    cursor: pointer;
+    border:4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+}
+.boton_arriba:hover{
+    transform: scale(1.1);
+    border-color: rgba(0,0,0,0.1);
+}
+/* BOTON ARRIBA FIN */
 
 @media screen and (max-width:800px  ) {
      .menu-navegacion{
