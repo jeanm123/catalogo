@@ -8,9 +8,10 @@ $(document).ready(function(){
 
 	$(window).scroll(function(){
 		if( $(this).scrollTop() > 0 ){
-			$('#boton_arriba').slideDown(300);
-		} else {
-			$('#boton_arriba').slideUp(300);
+			$('#boton_arriba').show(0);
+		} 
+        else {
+			$('#boton_arriba').hide(200);
 		}
 	});
 
