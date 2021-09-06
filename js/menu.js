@@ -14,7 +14,7 @@ function selected(){
 }
 
 function subir_arriba(){
-    var boton_arriba=document.documentElement.scrollTop
+    var boton_arriba=document.documentElement.scrollY
     if(boton_arriba>0){
         window.requestAnimationFrame(subir_arriba);
         window.scrollTo(0,boton_arriba-(boton_arriba/10));
@@ -22,7 +22,7 @@ function subir_arriba(){
 }
 buttonUp=document.getElementById("boton_arriba");
 window.onscroll=function(){
-    var scroll=document.documentElement.scrollTop;
+    var scroll=document.documentElement.scrollY;
 
     if(scroll>100){
         buttonUp.style.transform="scale(1)";
