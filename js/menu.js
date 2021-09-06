@@ -1,18 +1,4 @@
 
-// EVENTO PARA MOSTRAR 
-function open_close_menu(){
-    document.getElementById("menu_side").style.width = "250px";
-}
-// EVENTO PARA OCULTAR
-function close_menu(){
-    document.getElementById("menu_side").style.width = "0px";
-}
-// EVENTO SELECCIONAR
-function selected(){
-   var m= document.getElementById("selected");
-   m.className="selected"
-}
-
 function subir_arriba(){
     var boton_arriba= document.documentElement.scrollTop ||
 	document.body.scrollTop;
@@ -33,3 +19,18 @@ window.onscroll=function(){
     }
     
 }
+
+// EVENTO PARA MOSTRAR 
+function open_close_menu(){
+    document.getElementById("menu_side").style.width = "250px";
+}
+// EVENTO PARA OCULTAR
+function close_menu(){
+    document.getElementById("menu_side").style.width = "0px";
+}
+// EVENTO SELECCIONAR
+function selected(){
+   var m= document.getElementById("selected");
+   m.className="selected"
+}
+
