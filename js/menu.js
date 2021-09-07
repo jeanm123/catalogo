@@ -7,11 +7,12 @@ $(document).ready(function(){
 	});
 
 	$(window).scroll(function(){
+        $('#boton_arriba').css({ transform: 'scale(1)' });
 		if( $(this).scrollTop() > 0 ){
-			$('#boton_arriba').show(0);
+			$('#boton_arriba').show(300);
 		} 
         else {
-			$('#boton_arriba').hide(200);
+			$('#boton_arriba').hide(300);
 		}
 	});
 
