@@ -434,6 +434,6 @@ footer{
     .buscador{
         margin-top: 8%;
         border-radius: 60px;
-    
+        width: 80%;
     }
 }
