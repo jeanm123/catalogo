@@ -74,7 +74,8 @@
                 <span class="icon"><i class="fa fa-search"></i></span>
                 <input type="search" id="search" placeholder="Search..." />
             </div> -->
-            <input type="text" size="1" class="buscador" placeholder="Buscar producto">
+            <input type="text" size="1" class="buscador" placeholder="Buscar producto" onkeyup="buscar()"
+                id="formulario">
             <p class="copy">¿Cómo comprar?</p>
         </div>
     </header>
@@ -85,16 +86,30 @@
 
         <section class="gallery" id="portafolio">
             <h2 class="subtitulo-mayor" id="productos">Productos</h2>
-            <div class="contenedor-seccion-img">
+            <div class="contenedor-seccion-img" id="imagenes">
                 <div class="box-gallery">
                     <h2 class="subtitulo" id="hogar">Hogar</h2>
                     <div class="contenedor-galeria">
-                        <img src="img/1.jpg" alt="" class="img-galeria">
-                        <img src="img/2.PNG" alt="" class="img-galeria">
-                        <img src="img/3.jpg" alt="" class="img-galeria">
-                        <img src="img/4.jpg" alt="" class="img-galeria">
-                        <img src="img/5.jpg" alt="" class="img-galeria">
-                        <img src="img/6.jpg" alt="" class="img-galeria">
+                        <div data-categoria="hogar" data-etiquetas="cocina hogar baño" data-description="sadasdsadasda">
+
+                            <img src="img/1.jpg" alt="" class="img-galeria">
+                        </div>
+                        <div>
+                            <img src="img/2.PNG" alt="" class="img-galeria">
+                        </div>
+                        <div>
+                            <img src="img/3.jpg" alt="" class="img-galeria">
+                        </div>
+                        <div>
+                            <img src="img/4.jpg" alt="" class="img-galeria">
+                        </div>
+                        <div>
+                            <img src="img/5.jpg" alt="" class="img-galeria">
+                        </div>
+                        <div>
+                            <img src="img/6.jpg" alt="" class="img-galeria">
+                        </div>
+
                     </div>
                 </div>
                 <div class="box-gallery">
@@ -159,6 +174,7 @@
                 </div>
             </section>
         </section> -->
+
     </main>
     <footer id="contacto">
         <div class="contenedor footer-content">
@@ -180,6 +196,38 @@
         </div>
         <div class="line"></div>
     </footer>
+    <!-- Messenger plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your plugin de chat code -->
+    <!-- Messenger plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "102688874580839");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v12.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/lightbox.js"></script>

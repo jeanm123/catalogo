@@ -52,4 +52,22 @@ function selected(){
    var m= document.getElementById("selected");
    m.className="selected"
 }
-
+// BUSCADOR DE PRODUCTOS
+const productos=[
+	{'nombre':'platano','color':'plo'},
+	{'nombre':'durazno','color':'plo'},
+	{'nombre':'d','color':'plo'},
+	{'nombre':'pacay','color':'plo'},
+]
+const formulario=document.querySelector('#formulario');
+const imagenes=document.querySelector('#imagenes');
+function buscar() {
+	// console.log(formulario.value);
+	const nombre=formulario.value.toLocaleLowerCase();
+	for (let producto of productos){
+		let buscar=producto.nombre.toLocaleLowerCase();
+		if (buscar.indexOf(nombre) !== -1) {
+			console.log(producto.nombre);
+		}
+	}
+}
