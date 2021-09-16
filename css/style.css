@@ -112,10 +112,6 @@ header .categorias a.activo {
     border-radius: 50%;
 }
 
-
-
-  
-
 /* Input buscador  */
 .buscador{
     margin-top: 2%;
@@ -165,14 +161,7 @@ header .categorias a.activo {
 }
 
 /* Nuestros servicios */
-.subtitulo-mayor{
-    text-align: center;
-    font-weight: 300;
-    color: #9f8ad0;
-    margin-bottom: 40px;
-    font-size: 40px;
-    font-weight: bold;
-}
+
 .subtitulo{
     text-align: center;
     font-weight: 300;
@@ -196,9 +185,6 @@ header .categorias a.activo {
 }
 
 /* GALERIA */
-.div_main{
-    padding: 10px;
-}
 .gallery{
     padding: 4%;
 }
