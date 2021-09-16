@@ -61,13 +61,25 @@ const productos=[
 ]
 const formulario=document.querySelector('#formulario');
 const imagenes=document.querySelector('#imagenes');
-function buscar() {
-	// console.log(formulario.value);
-	const nombre=formulario.value.toLocaleLowerCase();
-	for (let producto of productos){
-		let buscar=producto.nombre.toLocaleLowerCase();
-		if (buscar.indexOf(nombre) !== -1) {
-			console.log(producto.nombre);
-		}
+// function buscar() {
+// 	// console.log(formulario.value);
+// 	const nombre=formulario.value.toLocaleLowerCase();
+// 	for (let producto of productos){
+// 		let buscar=producto.nombre.toLocaleLowerCase();
+// 		if (buscar.indexOf(nombre) !== -1) {
+// 			console.log(producto.nombre);
+// 		}
+// 	}
+// }
+const grid = new Muuri('.grid', {
+	layout: {
+		rounding: false
 	}
-}
+});
+window.addEventListener('load', () => {
+document.querySelector('#formulario').addEventListener('input', (evento) => {
+	const busqueda = evento.target.value;
+	console.log(busqueda);
+	// grid.filter( (item) => item.getElement().dataset.etiquetas.includes(busqueda) );
+});
+});
